@@ -6,10 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Calculator</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Style -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <main class="main">
+      <div class="calculator">
+        <div id="display" class="display">0</div>
+        <div class="buttons-grid">
+          <button id="clear" class="btn btn-red span-2">AC</button>
+          <button id="delete" class="btn btn-red">Del</button>
+          <button id="divide" class="btn btn-black operator">÷</button>
+
+          <button class="btn number">7</button>
+          <button class="btn number">8</button>
+          <button class="btn number">9</button>
+          <button id="multiply" class="btn btn-black operator">x</button>
+
+          <button class="btn number">4</button>
+          <button class="btn number">5</button>
+          <button class="btn number">6</button>
+          <button id="subtract" class="btn btn-black operator">-</button>
+
+          <button class="btn number">1</button>
+          <button class="btn number">2</button>
+          <button class="btn number">3</button>
+          <button id="plus" class="btn btn-black operator">+</button>
+
+          <button class="btn number span-3">0</button>
+          <button id="equal" class="btn btn-green">=</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        Lesson by
+        <a
+          href="https://www.theodinproject.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >The Odin Project</a
+        >. Coded by
+        <a
+          href="https://github.com/elbhiruni"
+          target="_blank"
+          rel="noopener noreferrer"
+          >El Bhiruni <i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

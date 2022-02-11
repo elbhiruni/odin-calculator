@@ -1,0 +1,158 @@
+:root {
+  --btn: #b2b2b2;
+  --btn-black: #32323c;
+  --btn-green: #72e572;
+  --btn-red: #ff7f7f;
+  --btn-hover: #a0a0a0;
+  --btn-black-hover: #23232a;
+  --btn-green-hover: #65cc65;
+  --btn-red-hover: #e57272;
+  --btn-active: #7c7c7c;
+  --btn-black-active: #19191e;
+  --btn-green-active: #58b258;
+  --btn-red-active: #b25858;
+  --calc-color: #163a54;
+  --display-color: #646e46;
+  --odin: #cc9543;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--btn-black-hover);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--odin);
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 300px;
+  background-color: var(--calc-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 8px;
+  border: 3px solid var(--odin);
+}
+
+.display {
+  width: 100%;
+  background-color: var(--display-color);
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 4px;
+}
+
+.buttons-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  background-color: var(--btn);
+  color: var(--white);
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+}
+
+.btn-black {
+  background-color: var(--btn-black);
+}
+
+.btn-black:hover {
+  background-color: var(--btn-black-hover);
+}
+
+.btn-black:active {
+  background-color: var(--btn-black-active);
+}
+
+.btn-green {
+  background-color: var(--btn-green);
+}
+
+.btn-green:hover {
+  background-color: var(--btn-green-hover);
+}
+
+.btn-green:active {
+  background-color: var(--btn-green-active);
+}
+
+.btn-red {
+  background-color: var(--btn-red);
+}
+.btn-red:hover {
+  background-color: var(--btn-red-hover);
+}
+
+.btn-red:active {
+  background-color: var(--btn-red-active);
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.footer {
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.fa-github {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.fa-github:hover {
+  transform: scale(1.6) rotate(360deg);
+}
